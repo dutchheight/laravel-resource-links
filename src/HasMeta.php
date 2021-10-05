@@ -11,7 +11,7 @@ trait HasMeta
     {
         $meta = self::meta();
 
-        if (! count($meta)) {
+        if (! empty($meta)) {
             return parent::collection($resource);
         }
 
